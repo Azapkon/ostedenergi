@@ -1,0 +1,385 @@
+body {
+    background-color: #C8E6C9; /* Açık yeşil arka plan */
+    color: #333; /* Metin rengi */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    background-color: #c6e4c8;
+  }
+  
+  .navbar-brand,
+  .nav-link {
+    color: #525151 !important; /* Siyah navbar linkleri */
+  }
+  
+  .nav-link:hover {
+    color: #030303 !important;
+  }
+  
+  /* Baggrundsvideo styling */
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+  }
+  
+  .fullscreen-video {
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  .video-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+  }
+  
+  /* Grid layout styling */
+  .card {
+    margin-bottom: 20px;
+  }
+  
+  .card-body h2 {
+    color: #16a733;
+  }
+  
+  .card-body p {
+    color: #666;
+  }
+  
+  /* Contact Form styling */
+  .contact-form {
+    background-color: #417841;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+  }
+  
+  .contact-form .form-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form .form-header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form h2 {
+    margin: 0;
+    font-size: 24px;
+    color: white; /* Beyaz yazı rengi */
+  }
+  
+  .contact-form form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .contact-form form input[type="text"],
+  .contact-form form input[type="email"],
+  .contact-form form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form form input[type="text"],
+  .contact-form form input[type="email"],
+  .contact-form form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+  }
+  
+  .contact-form form textarea {
+    resize: none;
+  }
+  
+  .contact-form form button {
+    width: auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Formun sağa yaslanması için */
+  @media (min-width: 992px) {
+    .contact-form {
+      float: right;
+      width: 90%;
+      margin-right: 0px;
+    }
+  }
+  
+  /* Eklenen stil - Lorem ipsum yazıların konktak form'a kadar uzanması */
+  .content {
+    margin-bottom: 0px;
+  }
+  
+  /* Header ve Footer styling */
+  header, footer {
+    background-color: #373837;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+  }
+  
+  .main {
+    display: flex;
+  }
+  
+  /* Form Stilleri */
+  #form {
+    background-color: #417841; /* Hafif gri arka plan */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #417841;
+    max-width: 500px;
+    margin: auto;
+    color: white
+  }
+  
+  #form .field {
+    margin-bottom: 15px;
+  }
+  
+  #form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  #form input[type="text"],
+  #form input[type="email"],
+  #form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    font-size: 16px;
+  }
+  
+  #form input[type="text"]:focus,
+  #form input[type="email"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+  }
+  
+  #form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #form input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* BURADAN BASLIYACAK OLAN SATIR */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+    min-width: 300px;
+    position: relative;
+}
+  .focus-box {
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.focus-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+.focus-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.focus-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.focus-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.focus-link:hover {
+    color: #15ba09; /* Rengi değiştirir */
+    text-decoration: none;
+}
+
+.focus-read-more {
+    font-size: 16px;
+    color: #007bff;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.focus-read-more:hover {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 1);
+} /* Læse mere button */
+
+/* BURDAN 2 ci TEST BASLIYOR */
+.site-footer {
+    padding: 50px 0;
+}
+
+.site-footer h4 {
+    color: #fff;
+}
+
+.site-footer p {
+    color: #ccc;
+}
+
+.site-footer .logo img {
+    max-width: 100%;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    margin-top: 25px;
+    padding: 15px 0;
+}
+
+.footer-bottom p {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.social-icons {
+    margin-top: 15px; /* Sosyal ikonlardan önceki boşluğu ayarlar */
+}
+
+/* EKSTRA EKSTRA */
+
+.site-footer h4,
+.site-footer p,
+.site-footer ul {
+    color: #fafafa;
+}
+
+.site-footer ul li {
+    list-style: none;
+}
+
+.site-footer .footer-bottom p {
+    color: #fafafa;
+} /*Copyright teksten*/
+
+.site-footer .nav-links a,
+.site-footer .contact-links a {
+    color: #fafafa;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.site-footer .nav-links a:hover,
+.site-footer .contact-links a:hover {
+    color: #417841;
+}
+
+.site-footer .tel-number {
+    color: #fafafa;
+    text-decoration: none;
+}
+
+
+.site-footer .tel-number:hover {
+    color: #417841;
+    text-decoration: none;
+}
+
+.site-footer .btn-primary {
+    background-color: #417841;
+    border-color: #0a0a0a;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.site-footer .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.site-footer .social-icons {
+    margin-top: 20px;
+}
+
+.site-footer .social-icons img {
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+

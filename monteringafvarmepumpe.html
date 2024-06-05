@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Min Hjemmeside</title>
+  <!-- Link til Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Tilpasset CSS -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .video-container {
+      position: relative;
+      max-height: 35vh; /* Maksimum yüksekliği daha da küçültüyoruz */
+      overflow: hidden; /* Video taşmasını önlemek için */
+    }
+    .video-container video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+    }
+    .video-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: white;
+    }
+    .btn-custom {
+      margin: 10px;
+      padding: 15px 30px;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: all 0.3s;
+    }
+    .btn-custom-primary {
+      background-color: #007bff;
+      border: none;
+      color: white;
+    }
+    .btn-custom-primary:hover {
+      background-color: #0056b3;
+      color: white;
+    }
+    .btn-custom-secondary {
+      background-color: #6c757d;
+      border: none;
+      color: white;
+    }
+    .btn-custom-secondary:hover {
+      background-color: #5a6268;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <!-- Brand og knap til mobilvisning -->
+      <a class="navbar-brand" href="#">
+        <img src="project-folder/img/logo.png" alt="Logo" height="60">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Hjem <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="omos.html">Om Os</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Baggrundsvideo med tekst og knapper -->
+  <div class="video-container">
+    <video autoplay muted loop class="fullscreen-video">
+      <source src="https://media.grouponline.org/asset-67fa77ca-2363-4368-8a79-e3a1867c65ee/hero_1280x720_AACAudio_3375.mp4" type="video/mp4">
+      Din browser understøtter ikke videoen.
+    </video>
+    <div class="video-overlay text-center">
+      <h1>Luft til Luft</h1>
+    </div>
+  </div>
+
+  <!-- Om Os Sektion -->
+  <div class="container-fluid white-section py-5">
+    <div class="container">
+      <h2 class="text-center">Luft til Luft</h2>
+      <div class="row">
+        <div class="col-md-8">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id hendrerit dui, sed bibendum nulla. Sed tellus lectus, fringilla eu facilisis at, blandit sit amet nisl. Pellentesque in varius libero. Etiam vel dui urna. Donec maximus auctor arcu eget tincidunt. Maecenas ac sapien leo. Aenean in porttitor tellus, id vulputate felis.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id hendrerit dui, sed bibendum nulla. Sed tellus lectus, fringilla eu facilisis at, blandit sit amet nisl. Pellentesque in varius libero. Etiam vel dui urna. Donec maximus auctor arcu eget tincidunt. Maecenas ac sapien leo. Aenean in porttitor tellus, id vulputate felis.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="project-folder/img/face.jpg" alt="Firma Ejer" class="rounded-circle img-fluid">
+          <h4>Firma Ejer</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="logo">
+            <img src="project-folder/img/logo.png" alt="Osted og Energi">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h4>Kontakt</h4>
+          <p>Osted & Energi</p>
+          <p>CVR: 1234567</p>
+          <p>Vejvej XXA, 1, XXXX Vallensbæk</p>
+          <p>Telefon: <a href="tel:XXXXXXXX">XX XX XX XX</a></p>
+          <p>Email: <a href="mailto:ostedogenergi@outlook.com">info@ostedogenergi.com</a></p>
+        </div>
+        <div class="col-md-3">
+          <h4>Navigation</h4>
+          <ul class="list-unstyled nav-links">
+            <li><a href="#">Montering af varmepumpe</a></li>
+            <li><a href="#">Luft til luft varmepumpe</a></li>
+            <li><a href="#">Luft til vand varmepumpe</a></li>
+            <li><a href="#">Varmepumpeservice</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4>Bestil service nu!</h4>
+          <p><a href="tel:XXXXXXXX" class="tel-number">Ring direkte: XX XX XX XX</a></p>
+          <button class="btn btn-primary">Ring til os</button>
+          <div class="social-icons">
+            <a href="https://www.facebook.com"><img src="project-folder/img/facebook-icon.png" alt="Facebook"></a>
+            <!-- Diğer sosyal medya ikonları buraya eklenebilir -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-center">&copy; 2023 Osted & Energi. Alle rettigheder forbeholdes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Link til Bootstrap JavaScript og jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
